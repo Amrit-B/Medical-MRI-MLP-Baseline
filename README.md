@@ -28,6 +28,9 @@ The experiment was conducted on a constrained subset of the **ADNI** dataset (18
 | **Training Accuracy** | **100.0%** | The model successfully memorized the decision boundaries of the training set by Epoch 5. |
 | **Test Accuracy** | **16.67%** | The model failed to generalize to unseen patients, performing worse than random guessing (50%). |
 
+## Execution Log
+![Model Training Output](output.png)
+
 ### Key Findings
 * **Generalization Gap:** The extreme divergence between training and test metrics confirms that simple MLPs lack the inductive bias (spatial invariance) required for MRI analysis.
 * **Conclusion:** This baseline proves the necessity for **Convolutional Neural Networks (3D-CNNs)** or **Vision Transformers (ViTs)** to capture voxel-level correlations that are lost during the flattening process.
@@ -37,12 +40,9 @@ This project utilizes a subset of the **ADNI (Alzheimer's Disease Neuroimaging I
 
 **Note:** Due to repository size limits and data privacy restrictions associated with medical records, the raw NIFTI (.nii) files are **not included** in this repository. To reproduce these results, please obtain access via [ADNI](http://adni.loni.usc.edu/).
 
-## Execution Log
-![Model Training Output](output.png)
 
 ## Usage
 
-### 1. Requirements
+###  Requirements
 ```bash
 pip install -r requirements.txt
-
