@@ -40,6 +40,7 @@ This project utilizes a subset of the **ADNI (Alzheimer's Disease Neuroimaging I
 
 **Note:** Due to repository size limits and data privacy restrictions associated with medical records, the raw NIFTI (.nii) files are **not included** in this repository. To reproduce these results, please obtain access via [ADNI](http://adni.loni.usc.edu/).
 
-###  Requirements
-```bash
-pip install -r requirements.txt
+
+Requirements: pip install -r requirements.txt
+
+Execution: python medical_mlp_baseline.py
