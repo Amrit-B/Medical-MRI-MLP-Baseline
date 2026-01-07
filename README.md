@@ -42,3 +42,6 @@ This project utilizes a subset of the **ADNI (Alzheimer's Disease Neuroimaging I
 ### 1. Requirements
 ```bash
 pip install -r requirements.txt
+
+## Execution Log
+![Model Training Output](output.png)
